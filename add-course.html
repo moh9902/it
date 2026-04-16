@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Course Organizer | Add Course</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container">
+        <h1 class="branding">Personal Course Organizer</h1>
+        <nav class="site-nav" aria-label="Main navigation">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="my-courses.html">My Courses</a></li>
+            <li><a class="active" href="add-course.html">Add Course</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="container card">
+        <h2>Add Course</h2>
+        <p>Fill in the form below to add a new course:</p>
+
+        <form action="add-course.html" method="get">
+          <div class="form-row">
+            <label for="course-name">Course Name</label>
+            <input id="course-name" name="courseName" type="text" required />
+          </div>
+
+          <div class="form-row">
+            <label for="instructor">Instructor</label>
+            <input id="instructor" name="instructor" type="text" required />
+          </div>
+
+          <div class="form-row">
+            <label for="credit-hours">Credit Hours</label>
+            <select id="credit-hours" name="creditHours" required>
+              <option value="" selected disabled>Select credit hours</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+            
+            </select>
+          </div>
+
+          <div class="form-row">
+            <label for="notes">Notes</label>
+            <textarea
+              id="notes"
+              name="notes"
+              rows="5"
+              placeholder="Write any notes about the course"
+            ></textarea>
+          </div>
+
+          <button type="submit">Save Course</button>
+        </form>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <small
+          >&copy; 2026. All rights reserved.</small
+        >
+      </div>
+    </footer>
+  </body>
+</html>
